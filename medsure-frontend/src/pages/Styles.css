@@ -1,0 +1,959 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #0044cc;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Landing Page Styles */
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .landing-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .landing-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .landing-header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .landing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  .feature {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .feature h2 {
+    font-size: 1.5rem;
+    color: #0044cc;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .landing-footer {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .landing-footer p {
+    font-size: 0.875rem;
+    color: #999;
+  }
+  /* Styles.css */
+
+.landing-page {
+  position: relative;
+  padding: 20px;
+}
+
+.get-started-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #45a049;
+}
+
+.landing-header {
+  text-align: center;
+}
+
+.landing-content {
+  margin-top: 40px;
+}
+
+.feature {
+  margin-bottom: 20px;
+}
+
+.landing-footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #666;
+}
+
+
+  /* Auth Page Styles */
+.auth-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f4f8;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .auth-header h1 {
+    font-size: 2.5rem;
+    color: #0044cc;
+    margin-bottom: 10px;
+  }
+  
+  .auth-header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .auth-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .auth-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  
+  .auth-form label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .auth-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .auth-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0044cc;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .auth-form button:hover {
+    background-color: #0033aa;
+  }
+  
+  .auth-footer {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .auth-footer p {
+    font-size: 0.875rem;
+    color: #999;
+  }
+  /* Onboarding Page Styles */
+.onboarding-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .onboarding-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .onboarding-header h1 {
+    font-size: 2.5rem;
+    color: #0044cc;
+    margin-bottom: 10px;
+  }
+  
+  .onboarding-header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .onboarding-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .step {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+  }
+  
+  .step h2 {
+    font-size: 1.5rem;
+    color: #0044cc;
+    margin-bottom: 10px;
+  }
+  
+  .step p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .onboarding-footer {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .continue-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0044cc;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .continue-button:hover {
+    background-color: #0033aa;
+  }
+  /* Dashboard Page Styles */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 2.5rem;
+    color: #0044cc;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .dashboard-content {
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .dashboard-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-section h2 {
+    font-size: 1.8rem;
+    color: #0044cc;
+    margin-bottom: 15px;
+  }
+  
+  .metrics {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .metric {
+    flex: 1;
+    min-width: 200px;
+    background-color: #f0f4f8;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 5px;
+    text-align: center;
+  }
+  
+  .metric h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .metric p {
+    font-size: 1.5rem;
+    color: #555;
+  }
+  
+  .activity-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .activity-list li {
+    font-size: 1rem;
+    color: #666;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .quick-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .link-item {
+    display: block;
+    font-size: 1.1rem;
+    color: #0044cc;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #e0eaff;
+  }
+  
+  .link-item:hover {
+    background-color: #0044cc;
+    color: #fff;
+  }
+  /* Provider Network Page Styles */
+.provider-network {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .provider-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .provider-header h1 {
+    font-size: 2.5rem;
+    color: #0044cc;
+    margin-bottom: 10px;
+  }
+  
+  .provider-header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    margin-right: 10px;
+    width: 300px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0044cc;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #0033aa;
+  }
+  
+  .provider-list {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .provider-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .provider-item h2 {
+    font-size: 1.8rem;
+    color: #0044cc;
+    margin-bottom: 10px;
+  }
+  
+  .provider-item p {
+    font-size: 1rem;
+    color: #666;
+  }
+  /* Health Library Page Styles */
+.health-library {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .library-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .library-header h1 {
+    font-size: 2.5rem;
+    color: #0044cc;
+    margin-bottom: 10px;
+  }
+  
+  .library-header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    margin-right: 10px;
+    width: 300px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0044cc;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #0033aa;
+  }
+  
+  .library-content {
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .featured-articles {
+    margin-bottom: 30px;
+  }
+  
+  .featured-articles h2 {
+    font-size: 1.8rem;
+    color: #0044cc;
+    margin-bottom: 20px;
+  }
+  
+  .article-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .article-item h3 {
+    font-size: 1.5rem;
+    color: #0044cc;
+    margin-bottom: 10px;
+  }
+  
+  .article-item p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .categories {
+    text-align: center;
+  }
+  
+  .categories h2 {
+    font-size: 1.8rem;
+    color: #0044cc;
+    margin-bottom: 20px;
+  }
+  
+  .categories ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .categories li {
+    margin-bottom: 10px;
+  }
+  
+  .categories a {
+    font-size: 1.1rem;
+    color: #0044cc;
+    text-decoration: none;
+  }
+  
+  .categories a:hover {
+    text-decoration: underline;
+  }
+  /* Medication Management Page Styles */
+.medication-management {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .medication-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .medication-header h1 {
+    font-size: 2.5rem;
+    color: #003d99;
+    margin-bottom: 10px;
+  }
+  
+  .medication-header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .medication-content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .medication-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .medication-input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .add-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #003d99;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .add-button:hover {
+    background-color: #002a66;
+  }
+  
+  .medication-list {
+    text-align: center;
+  }
+  
+  .medication-list h2 {
+    font-size: 2rem;
+    color: #003d99;
+    margin-bottom: 20px;
+  }
+  
+  .medication-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .medication-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  /* Telehealth Page Styles */
+.telehealth-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #eaf2f8;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .telehealth-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .telehealth-header h1 {
+    font-size: 2.5rem;
+    color: #003d99;
+    margin-bottom: 10px;
+  }
+  
+  .telehealth-header p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .telehealth-content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .provider-selection {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .provider-select {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .book-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #003d99;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .book-button:hover {
+    background-color: #002a66;
+  }
+  
+  .telehealth-resources {
+    text-align: center;
+  }
+  
+  .telehealth-resources h2 {
+    font-size: 2rem;
+    color: #003d99;
+    margin-bottom: 20px;
+  }
+  
+  .telehealth-resources ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .resource-link {
+    color: #003d99;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .resource-link:hover {
+    text-decoration: underline;
+  }
+  /* Insurance Marketplace Styles */
+.insurance-marketplace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .marketplace-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .marketplace-header h1 {
+    font-size: 2.5rem;
+    color: #0056b3;
+    margin-bottom: 10px;
+  }
+  
+  .marketplace-header p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .plans-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .plan-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .plan-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+  }
+  
+  .plan-card.selected {
+    border-color: #0056b3;
+    background-color: #e0f7ff;
+  }
+  
+  .plan-name {
+    font-size: 1.8rem;
+    color: #0056b3;
+    margin-bottom: 10px;
+  }
+  
+  .plan-description {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .plan-cost {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .compare-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .compare-button:hover {
+    background-color: #0056b3;
+  }
+  /* Claim Detail Page Styles */
+.claim-detail-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .claim-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .claim-header h1 {
+    font-size: 2.5rem;
+    color: #0056b3;
+    margin-bottom: 10px;
+  }
+  
+  .claim-header p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .claim-info {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .claim-info h2 {
+    font-size: 1.8rem;
+    color: #0056b3;
+    margin-bottom: 20px;
+  }
+  
+  .claim-info p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .claim-info .status {
+    font-weight: bold;
+  }
+  
+  .claim-info .status.pending {
+    color: #ff9800; /* Orange for pending status */
+  }
+  
+  .claim-info .status.approved {
+    color: #4caf50; /* Green for approved status */
+  }
+  
+  .claim-info .status.rejected {
+    color: #f44336; /* Red for rejected status */
+  }
+  
+  .action-button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .action-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .dashboard-nav {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dashboard-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dashboard-nav li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  .dashboard-nav a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .dashboard-nav a:hover {
+    text-decoration: underline;
+  }
+  

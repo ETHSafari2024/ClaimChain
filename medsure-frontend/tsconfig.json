@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es6", // Target JavaScript version
+    "module": "commonjs", // Module system
+    "jsx": "react", // JSX support
+    "strict": true, // Enables all strict type-checking options
+    "esModuleInterop": true, // Interoperability between CommonJS and ES Modules
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Consistent casing in file names
+    "outDir": "./build", // Output directory for compiled files
+    "baseUrl": "./src", // Base directory for module resolution
+    "typeRoots": ["./node_modules/@types"] // Location of type declaration files
+  },
+  "include": ["src"], // Include files in src directory
+  "exclude": ["node_modules"] // Exclude node_modules directory
+}

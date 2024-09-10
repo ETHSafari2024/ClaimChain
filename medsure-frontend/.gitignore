@@ -1,0 +1,55 @@
+# Node modules
+node_modules/
+
+# Build output
+build/
+dist/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Next.js build output (if using Next.js)
+.next/
+
+# TypeScript artifacts
+*.tsbuildinfo
+
+# VS Code settings
+.vscode/
+
+# MacOS Finder metadata
+.DS_Store
+
+# Windows thumbnail cache
+Thumbs.db
+
+# Linux trash folder
+.Trash-*
+
+# IDE and Editor configuration
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# React Native
+.expo/
+.expo-shared/
+
+# SvelteKit
+.svelte-kit/
+
+# Storybook
+.out/
+storybook-static/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
