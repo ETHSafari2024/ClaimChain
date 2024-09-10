@@ -17,109 +17,217 @@ body {
     color: #666;
   }
   
-  /* Landing Page Styles */
-  .landing-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #f5f5f5;
-  }
-  
-  .landing-header {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .landing-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .landing-header p {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
-  .landing-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 900px;
-    width: 100%;
-  }
-  
-  .feature {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .feature h2 {
-    font-size: 1.5rem;
-    color: #0044cc;
-    margin-bottom: 10px;
-  }
-  
-  .feature p {
-    font-size: 1rem;
-    color: #666;
-  }
-  
-  .landing-footer {
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .landing-footer p {
-    font-size: 0.875rem;
-    color: #999;
-  }
-  /* Styles.css */
-
-.landing-page {
-  position: relative;
-  padding: 20px;
+/* Ensure full height for the HTML and body */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Prevents scrollbars on the body */
 }
 
-.get-started-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  background-color: #4CAF50;
+/* Main container for the sidebar and content */
+.app-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px; /* Adjust width as needed */
+  background-color: #333;
   color: white;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
 }
 
-.get-started-btn:hover {
-  background-color: #45a049;
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Main content area */
+.main-content {
+  margin-left: 250px; /* Same as sidebar width */
+  flex: 1; /* Takes up remaining space */
+  padding: 20px;
+  background-color: #f5f5f5;
+  overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+/* Ensure full height for the HTML and body */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Prevents scrollbars on the body */
+}
+
+/* Main container for the sidebar and content */
+.app-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px; /* Adjust width as needed */
+  background-color: #e0f7fa; /* Bright background color */
+  color: #333; /* Darker text for contrast */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  border-right: 2px solid #00acc1; /* Adding a border for better definition */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar-title {
+  font-size: 1.8rem;
+  color: #0044cc; 
+  margin-bottom: 20px;
+}
+
+
+.sidebar li {
+  margin: 15px 0;
+  padding: 12px;
+  border-radius: 4px;
+  background-color: #b2ebf2; /* Subtle background color for list items */
+  color: #006064; /* Darker color for the list text */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar li:hover {
+  background-color: #00acc1; /* Brighter hover color */
+  color: #fff; /* White text on hover */
+}
+
+.sidebar a {
+  color: inherit; /* Ensures link color inherits from li */
+  text-decoration: none;
+}
+
+/* Main content area */
+.main-content {
+  margin-left: 250px; /* Same as sidebar width */
+  flex: 1; /* Takes up remaining space */
+  padding: 20px;
+  background-color: #f5f5f5;
+  overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+/* Landing Page Styles */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 .landing-header {
   text-align: center;
+  margin-bottom: 30px;
+}
+
+.landing-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.landing-header p {
+  font-size: 1.2rem;
+  color: #555;
 }
 
 .landing-content {
-  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
 }
 
 .feature {
-  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.feature h2 {
+  font-size: 1.5rem;
+  color: #0044cc;
+  margin-bottom: 10px;
+}
+
+.feature-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #666;
 }
 
 .landing-footer {
   text-align: center;
-  margin-top: 40px;
-  color: #666;
+  margin-top: 30px;
+}
+
+.landing-footer p {
+  font-size: 0.875rem;
+  color: #999;
+}
+
+.get-started-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.get-started-btn:hover {
+  background-color: #0056b3;
 }
 
 
