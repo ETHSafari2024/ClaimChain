@@ -1,33 +1,32 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Sidebar from './pages/Sidebar';
 import LandingPage from './pages/LandingPage';
-import AuthPage from './pages/AuthPage';
-import RegisterPage from './pages/RegisterPage'; // Import RegisterPage
-import OnboardingPage from './pages/OnboardingPage';
-import Dashboard from './pages/Dashboard';
-import ProviderNetwork from './pages/ProviderNetwork';
-import HealthLibrary from './pages/HealthLibrary';
-import MedicationManagement from './pages/MedicationManagement';
-import TelehealthPage from './pages/TelehealthPage';
-import InsuranceMarketplace from './pages/InsuranceMarketplace';
-import ClaimDetailPage from './pages/ClaimDetailPage';
+import PolicyDetails from './pages/PolicyDetails';
+import PoolManagement from './pages/PoolManagement';
+import ClaimsProcessing from './pages/ClaimsProcessing';
+import Tracking from './pages/Tracking';
+import Governance from './pages/Governance';
+import Security from './pages/Security';
+import './pages/Styles.css'; 
 
 const App: React.FC = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/auth" element={<AuthPage />} />
-        <Route path="/register" element={<RegisterPage />} />
-        <Route path="/onboarding" element={<OnboardingPage />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/provider-network" element={<ProviderNetwork />} />
-        <Route path="/health-library" element={<HealthLibrary />} />
-        <Route path="/medication-management" element={<MedicationManagement />} />
-        <Route path="/telehealth" element={<TelehealthPage />} />
-        <Route path="/insurance-marketplace" element={<InsuranceMarketplace />} />
-        <Route path="/claim-detail" element={<ClaimDetailPage />} />
-      </Routes>
+      <div className="app-container">
+        <Sidebar />
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/policy-details" element={<PolicyDetails />} />
+            <Route path="/pool-management" element={<PoolManagement />} />
+            <Route path="/claims-processing" element={<ClaimsProcessing />} />
+            <Route path="/tracking" element={<Tracking />} />
+            <Route path="/governance" element={<Governance />} />
+            <Route path="/security" element={<Security />} />
+          </Routes>
+        </div>
+      </div>
     </Router>
   );
 };
