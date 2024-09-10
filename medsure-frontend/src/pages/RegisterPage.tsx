@@ -1,26 +1,25 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link for navigation
 import './Styles.css';
 
-const AuthPage: React.FC = () => {
+const RegisterPage: React.FC = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleRegister = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle login logic here
+    // Handle registration logic here
     console.log('Username:', username);
     console.log('Password:', password);
   };
 
   return (
-    <div className="auth-page">
-      <header className="auth-header">
-        <h1>Authentication</h1>
-        <p>Please log in to continue.</p>
+    <div className="register-page">
+      <header className="register-header">
+        <h1>Register</h1>
+        <p>Create an account to get started.</p>
       </header>
-      <section className="auth-content">
-        <form className="auth-form" onSubmit={handleLogin}>
+      <section className="register-content">
+        <form className="register-form" onSubmit={handleRegister}>
           <label htmlFor="username">Username:</label>
           <input
             type="text"
@@ -37,18 +36,14 @@ const AuthPage: React.FC = () => {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          <button type="submit">Login</button>
+          <button type="submit">Register</button>
         </form>
-        <div className="auth-footer">
-          <p>Don't have an account?</p>
-          <Link to="/register" className="create-account-link">Create Account</Link>
-        </div>
       </section>
-      <footer className="auth-footer">
+      <footer className="register-footer">
         <p>© 2024 Medsure. All rights reserved.</p>
       </footer>
     </div>
   );
 };
 
-export default AuthPage;
+export default RegisterPage;

@@ -6,8 +6,8 @@ const LandingPage: React.FC = () => {
   return (
     <div className="landing-page">
       <header className="landing-header">
-        {/* Get Started button */}
-        <Link to="/onboarding" className="get-started-btn">Get Started</Link>
+        {/* Updated Get Started button */}
+        <Link to="/auth" className="get-started-btn">Get Started</Link>
         
         <h1>Welcome to Medsure</h1>
         <p>Your health management platform.</p>

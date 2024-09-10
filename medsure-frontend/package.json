@@ -4,45 +4,49 @@
     "description": "Frontend for the Medsure project",
     "main": "index.tsx",
     "scripts": {
-      "start": "react-scripts start",
-      "build": "react-scripts build",
-      "test": "react-scripts test",
-      "eject": "react-scripts eject",
-      "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-      "type-check": "tsc --noEmit"
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+        "type-check": "tsc --noEmit"
     },
     "dependencies": {
-      "react": "^18.2.0",
-      "react-dom": "^18.2.0",
-      "react-router-dom": "^6.8.0"  
+        "react": "^18.0.0",
+        "react-bootstrap": "^2.10.4",
+        "react-calendar": "^3.9.0",
+        "react-dom": "^18.0.0",
+        "react-router-dom": "^6.0.0",
+        "recharts": "^2.12.7",
+        "typescript": "^4.9.5"
     },
     "devDependencies": {
-      "@types/react": "^18.0.37",
-      "@types/react-dom": "^18.0.11",
-      "typescript": "^5.0.4",
-      "eslint": "^8.35.0",
-      "eslint-plugin-react": "^7.32.2",
-      "eslint-plugin-react-hooks": "^4.6.0",
-      "react-scripts": "^5.0.1"
+        "@types/react": "^18.0.37",
+        "@types/react-calendar": "^3.9.0",
+        "@types/react-dom": "^18.0.11",
+        "eslint": "^8.35.0",
+        "eslint-plugin-react": "^7.32.2",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "react-scripts": "^5.0.1",
+        "typescript": "^4.9.5"
     },
     "eslintConfig": {
-      "extends": [
-        "react-app",
-        "react-app/jest"
-      ]
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
     },
     "browserslist": {
-      "production": [
-        ">0.2%",
-        "not dead",
-        "not op_mini all"
-      ],
-      "development": [
-        "last 1 chrome version",
-        "last 1 firefox version",
-        "last 1 safari version"
-      ]
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
     },
     "type": "module"
-  }
-  
+}

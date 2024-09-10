@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 import AuthPage from './pages/AuthPage';
+import RegisterPage from './pages/RegisterPage'; // Import RegisterPage
 import OnboardingPage from './pages/OnboardingPage';
 import Dashboard from './pages/Dashboard';
 import ProviderNetwork from './pages/ProviderNetwork';
@@ -17,6 +18,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/auth" element={<AuthPage />} />
+        <Route path="/register" element={<RegisterPage />} />
         <Route path="/onboarding" element={<OnboardingPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/provider-network" element={<ProviderNetwork />} />
