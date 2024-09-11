@@ -11,6 +11,6 @@
     "baseUrl": "./src",
     "typeRoots": ["./node_modules/@types"]
   },
-  "include": ["src"],
+  "include": ["src"], // Make sure this includes the path to your declaration file
   "exclude": ["node_modules"]
 }

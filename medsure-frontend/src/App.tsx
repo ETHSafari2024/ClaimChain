@@ -1,4 +1,3 @@
-// src/App.tsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainLayout from './pages/MainLayout'; // Adjust path as needed
@@ -9,7 +8,8 @@ import ClaimsProcessing from './pages/ClaimsProcessing'; // Adjust path as neede
 import Tracking from './pages/Tracking'; // Adjust path as needed
 import Governance from './pages/Governance'; // Adjust path as needed
 import Security from './pages/Security'; // Adjust path as needed
-import Authentication from './pages/Authentication'; // Import Authentication component
+import Authentication from './pages/Authentication'; // Adjust path as needed
+import Onboarding from './pages/Onboarding'; // Import Onboarding component
 import './pages/style.css'; // Import your global CSS
 
 const App: React.FC = () => {
@@ -24,7 +24,8 @@ const App: React.FC = () => {
           <Route path="/tracking" element={<Tracking />} />
           <Route path="/governance" element={<Governance />} />
           <Route path="/security" element={<Security />} />
-          <Route path="/auth" element={<Authentication />} /> {/* Add Authentication route */}
+          <Route path="/auth" element={<Authentication />} />
+          <Route path="/onboarding" element={<Onboarding />} /> {/* Ensure this is correct */}
         </Routes>
       </MainLayout>
     </Router>

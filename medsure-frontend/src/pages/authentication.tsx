@@ -1,70 +1,29 @@
 import React, { useState } from 'react';
-import Web3 from 'web3';
-import detectEthereumProvider from '@metamask/detect-provider';
 import { useNavigate } from 'react-router-dom';
-
-const contractABI = [
-  // ABI of the UserRegistry contract
-  {
-    "constant": true,
-    "inputs": [
-      {
-        "name": "user",
-        "type": "address"
-      }
-    ],
-    "name": "userExists",
-    "outputs": [
-      {
-        "name": "",
-        "type": "bool"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  }
-];
-
-const contractAddress = '0xYourContractAddressOnSepolia';
 
 const Authentication: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const buttonStyle: React.CSSProperties = {
-    padding: '10px 20px',
-    backgroundColor: '#007bff',
-    color: 'white',
-    border: 'none',
-    borderRadius: '5px',
-    fontSize: '16px',
-    fontWeight: 'bold',
-    cursor: 'pointer',
-  };
-
   const handleAuthenticate = async () => {
     setLoading(true);
 
     try {
-      const provider = await detectEthereumProvider();
-
-      if (provider) {
-        const web3 = new Web3(provider as any);
-        await (provider as any).request({ method: 'eth_requestAccounts' });
-
-        const accounts = await web3.eth.getAccounts();
+      // Check if MetaMask is installed
+      if (window.ethereum) {
+        // Request account access
+        await (window.ethereum as any).request({ method: 'eth_requestAccounts' });
+        
+        // Get the connected account
+        const accounts = await (window.ethereum as any).request({ method: 'eth_accounts' });
         const userAccount = accounts[0];
 
-        const contract = new web3.eth.Contract(contractABI, contractAddress);
-
-        // Check if the user has an account with your service
-        const userHasAccount = await contract.methods.userExists(userAccount).call();
-
-        if (userHasAccount) {
-          navigate('/dashboard'); // Redirect to the user's dashboard
+        // For demo purposes, assume any connected account is valid
+        // In a real scenario, check against your backend or smart contract
+        if (userAccount) {
+          navigate('/onboarding'); // Redirect to onboarding page if authenticated
         } else {
-          navigate('/signup'); // Redirect to the signup page
+          alert('No account connected.');
         }
       } else {
         alert('Please install MetaMask!');
@@ -78,14 +37,9 @@ const Authentication: React.FC = () => {
   };
 
   return (
-    <div className="authentication-container">
-      <h1>Authenticate with MetaMask</h1>
-      <button
-        onClick={handleAuthenticate}
-        style={buttonStyle}
-        disabled={loading}
-      >
-        {loading ? 'Loading...' : 'Authenticate'}
+    <div className="authentication-page">
+      <button onClick={handleAuthenticate} disabled={loading}>
+        {loading ? 'Loading...' : 'Authenticate with MetaMask'}
       </button>
     </div>
   );
