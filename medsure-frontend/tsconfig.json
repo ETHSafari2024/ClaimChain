@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "jsx": "react",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./build",
+    "baseUrl": "./src",
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "include": ["src"], // Make sure this includes the path to your declaration file
+  "exclude": ["node_modules"]
+}

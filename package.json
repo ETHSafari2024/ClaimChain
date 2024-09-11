@@ -1,11 +1,17 @@
 {
+<<<<<<< HEAD
   "name": "claimchain",
   "version": "1.0.0",
   "description": "",
+=======
+  "name": "medsure",
+  "version": "1.0.0",
+>>>>>>> 36f0b867ce1d6d767845f4d2c2c5b82b155caae6
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+<<<<<<< HEAD
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ETHSafari2024/ClaimChain.git"
@@ -26,5 +32,18 @@
     "ethers": "^5.7.2",
     "hardhat": "^2.22.10",
     "ts-node": "^10.9.2"
+=======
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.6.2"
+>>>>>>> 36f0b867ce1d6d767845f4d2c2c5b82b155caae6
   }
 }
