@@ -1,0 +1,24 @@
+[
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "getPolicy",
+    "outputs": [
+      {
+        "name": "policyName",
+        "type": "string"
+      },
+      {
+        "name": "policyCoverage",
+        "type": "string"
+      },
+      {
+        "name": "policyPremium",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

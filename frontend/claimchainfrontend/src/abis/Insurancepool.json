@@ -1,0 +1,20 @@
+[
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "getPoolData",
+    "outputs": [
+      {
+        "name": "totalSupply",
+        "type": "uint256"
+      },
+      {
+        "name": "poolName",
+        "type": "string"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

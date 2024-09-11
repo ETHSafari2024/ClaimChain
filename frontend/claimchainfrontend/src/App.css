@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables for Colors */
+:root {
+  --primary: #0f535c; /* Brighter primary color */
+  --primary-hover: #0f535c; /* Brighter hover color */
+  --card-background: #fff; /* White card background */
+  --sidebar-background: #f1f5f9; /* Light sidebar background */
+  --text-primary: #000; /* Dark text for contrast */
+  --font-sans: 'Arial', sans-serif;
+  --card-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Slightly darker shadow for cards */
+}
+
+/* General Styles */
+body {
+  font-family: var(--font-sans);
+}
+
+h1 {
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #FFAF00;
+}
+
+button {
+  background-color: var(--primary);
+  border: none;
+  color: #FFAF00;
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.25rem 0.125rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  
+  &:hover {
+    background-color: var(--primary-hover);
+  }
+}
+
+main {
+  background-color: #f7fafc;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  background-color: var(--sidebar-background);
+  color: var(--text-primary);
+  width: 16rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Light shadow for the sidebar */
+}
+
+.sidebar-header {
+  background-color: var(--primary);
+  padding: 1rem;
+  text-align: center;
+}
+
+.sidebar-header h2 {
+  font-size: 1.5rem;
+  color: #FFAF00;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sidebar-nav {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.nav-list {
+  padding: 1rem;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--text-primary);
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+  font-size: 1rem;
+  
+  &:hover {
+    background-color: var(--primary-hover);
+  }
+}
+
+.icon {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-right: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sidebar-footer {
+  padding: 1rem;
+  background-color: var(--primary);
+}
+
+.sidebar-footer a {
+  display: flex;
+  align-items: center;
+  color: #FFAF00;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sidebar-footer .icon {
+  margin-right: 0.75rem;
+}
+
+/* Dashboard Styles */
+.dashboard {
+  padding: 1.5rem;
+  background-color: var(--card-background);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: var(--card-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--card-shadow);
+  padding: 1.25rem;
+}
+
+/* Profile Menu Styles */
+.relative {
+  position: relative;
+}
+
+.profile-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 12rem;
+  
+  a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #2d3748;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #edf2f7;
+    }
+  }
+}
