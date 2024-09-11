@@ -45,7 +45,7 @@ const AuthPage: React.FC = () => {
         </div>
       </section>
       <footer className="auth-footer">
-        <p>© 2024 Medsure. All rights reserved.</p>
+        <p>© 2024 ClaimChain. All rights reserved.</p>
       </footer>
     </div>
   );

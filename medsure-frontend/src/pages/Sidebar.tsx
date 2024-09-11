@@ -28,7 +28,7 @@ import '../pages/style.css';
 const Sidebar: React.FC = () => {
   return (
     <div className="sidebar">
-      <h1 className="sidebar-title">Medsure</h1>
+      <h1 className="sidebar-title">ClaimChain</h1>
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/policy-details">Policy Details</Link></li>

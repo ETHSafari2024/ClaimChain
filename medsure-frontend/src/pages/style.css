@@ -89,7 +89,7 @@ p {
 
 /* Buttons */
 button {
-  background-color: #3498db;
+  background-color: #0f535c;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -170,7 +170,7 @@ table th {
   padding: 10px 20px;
   font-size: 18px;
   color: #fff;
-  background-color: #007bff;
+  background-color: #0f535c;
   text-decoration: none;
   border-radius: 5px;
 }
@@ -262,13 +262,13 @@ table th {
 }
 
 .cta-button:hover {
-  background-color: #004494;
+  background-color: #0f535c;
 }
 
 .landing-footer {
   margin-top: 20px;
   padding: 10px;
-  background-color: #007bff;
+  background-color: #0f535c;
   color: white;
 }
 
@@ -308,7 +308,7 @@ table th {
 
 /* Header Styles */
 .header {
-  background-color: #0288d1; /* Change to green if preferred */
+  background-color: #0f535c; 
   color: white;
   padding: 20px 30px;
   box-shadow: 0 4px 8px rgba(46, 25, 25, 0.1);

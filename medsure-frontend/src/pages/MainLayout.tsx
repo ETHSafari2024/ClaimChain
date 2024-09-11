@@ -6,14 +6,14 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div className="main-layout">
       <header className="header">
-        <h1>Medsure</h1> {/* Replace with your header content */}
+        <h1>ClaimChain</h1> {/* Replace with your header content */}
       </header>
       <Navbar /> {/* Include the Navbar here */}
       <main className="main-content">
         {children} {/* Render the children components (e.g., page content) */}
       </main>
       {/* <footer className="footer">
-        <p>© 2024 Medsure. All rights reserved.</p>
+        <p>© 2024 ClaimChain. All rights reserved.</p>
       </footer> */}
     </div>
   );

@@ -23,7 +23,7 @@ const LandingPage: React.FC = () => {
     <div className="landing-page">
       <header className="landing-header">
         <Link to="/auth" style={buttonStyle}>Get Started</Link>
-        <h1>Welcome to Medsure</h1>
+        <h1>Welcome to ClaimChain</h1>
         <p>Your Health Management Platform.</p>
       </header>
       <section className="landing-content">
@@ -46,7 +46,7 @@ const LandingPage: React.FC = () => {
 
       {/* New Section: Benefits */}
       <section className="benefits">
-        <h2>Why Choose Medsure?</h2>
+        <h2>Why Choose ClaimChain?</h2>
         <div className="benefits-list">
           <div className="benefit-item">
             <h3>Comprehensive Insights</h3>
@@ -68,7 +68,7 @@ const LandingPage: React.FC = () => {
         <h2>What Our Users Say</h2>
         <div className="testimonials-list">
           <div className="testimonial">
-            <p>"Medsure has revolutionized the way I manage my health. The tracking tools are fantastic!"</p>
+            <p>"ClaimChain has revolutionized the way I manage my health. The tracking tools are fantastic!"</p>
             <h4>Jane Doe</h4>
           </div>
           <div className="testimonial">
@@ -76,7 +76,7 @@ const LandingPage: React.FC = () => {
             <h4>John Smith</h4>
           </div>
           <div className="testimonial">
-            <p>"Finding healthcare providers has never been easier. Medsure is a game-changer."</p>
+            <p>"Finding healthcare providers has never been easier. ClaimChain is a game-changer."</p>
             <h4>Emily Davis</h4>
           </div>
         </div>
