@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import trackHealthImg from './1.png';
 import manageClaimsImg from './2.jpeg';
 import connectProvidersImg from './3.jpeg';
-import './style.css'; 
-
+import './style.css';
 
 const LandingPage: React.FC = () => {
   const buttonStyle: React.CSSProperties = {
@@ -44,9 +43,51 @@ const LandingPage: React.FC = () => {
           <p>Find and connect with healthcare providers easily.</p>
         </div>
       </section>
-      <footer className="landing-footer">
-        <p>© 2024 Medsure. All rights reserved.</p>
-      </footer>
+
+      {/* New Section: Benefits */}
+      <section className="benefits">
+        <h2>Why Choose Medsure?</h2>
+        <div className="benefits-list">
+          <div className="benefit-item">
+            <h3>Comprehensive Insights</h3>
+            <p>Get detailed insights into your health and wellness with our advanced analytics.</p>
+          </div>
+          <div className="benefit-item">
+            <h3>Easy Claims Management</h3>
+            <p>Simplify the process of managing insurance claims with our intuitive interface.</p>
+          </div>
+          <div className="benefit-item">
+            <h3>Trusted Providers</h3>
+            <p>Connect with a network of trusted healthcare providers and receive quality care.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* New Section: Testimonials */}
+      <section className="testimonials">
+        <h2>What Our Users Say</h2>
+        <div className="testimonials-list">
+          <div className="testimonial">
+            <p>"Medsure has revolutionized the way I manage my health. The tracking tools are fantastic!"</p>
+            <h4>Jane Doe</h4>
+          </div>
+          <div className="testimonial">
+            <p>"The claims management feature saved me so much time. Highly recommended!"</p>
+            <h4>John Smith</h4>
+          </div>
+          <div className="testimonial">
+            <p>"Finding healthcare providers has never been easier. Medsure is a game-changer."</p>
+            <h4>Emily Davis</h4>
+          </div>
+        </div>
+      </section>
+
+      {/* New Section: Call to Action */}
+      <section className="cta">
+        <h2>Ready to Take Control of Your Health?</h2>
+        <Link to="/auth" className="cta-button">Join Us Now</Link>
+      </section>
+
     </div>
   );
 };

@@ -1,17 +1,32 @@
 /* General Styles */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
-  }
-  
-  /* App Container */
-  .app-container {
-    display: flex;
-    height: 100vh;
-  }
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Main Layout */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the layout takes up the full viewport height */
+}
+
+.main-content {
+  flex: 1; /* Allows the content to take up the remaining space */
+}
+
 /* Sidebar */
 .sidebar {
   width: 240px;
@@ -43,134 +58,270 @@ body {
   color: #fff; /* White text on hover */
 }
 
-  
-  /* Content */
-  .content {
-    flex-grow: 1;
-    padding: 20px;
-    overflow-y: auto;
-  }
-  
-  /* Common Page Styles */
-  .page-container {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    min-height: 100vh;
-  }
-  
-  /* Headers */
-  h1 {
-    font-size: 24px;
-    margin-top: 0;
-    color: #2c3e50;
-  }
-  
-  /* Paragraphs */
-  p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  /* Buttons */
-  button {
-    background-color: #3498db;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #2980b9;
-  }
-  
-  /* Forms */
-  input, select, textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    margin-bottom: 15px;
-  }
-  
-  input:focus, select:focus, textarea:focus {
-    border-color: #3498db;
-    outline: none;
-  }
-  
-  /* Tables */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  }
-  
-  table th, table td {
-    padding: 12px;
-    border: 1px solid #ddd;
-  }
-  
-  table th {
-    background-color: #3498db;
-    color: #fff;
-  }
-  
-  /* Alerts */
-  .alert {
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    color: #fff;
-  }
-  
-  .alert.success {
-    background-color: #2ecc71;
-  }
-  
-  .alert.error {
-    background-color: #e74c3c;
-  }
-  
-  .alert.info {
-    background-color: #3498db;
-  }
-  .landing-page {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .landing-header {
-    margin-bottom: 20px;
-  }
-  
-  .get-started-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 18px;
-    color: #fff;
-    background-color: #007bff;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .landing-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .feature {
-    margin: 10px;
-    width: 30%;
-  }
-  
-  .landing-footer {
-    margin-top: 20px;
-  }
-  
+/* Content */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Common Page Styles */
+.page-container {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
+}
+
+/* Headers */
+h1 {
+  font-size: 24px;
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+/* Paragraphs */
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Buttons */
+button {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Forms */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th, table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Alerts */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.alert.success {
+  background-color: #2ecc71;
+}
+
+.alert.error {
+  background-color: #e74c3c;
+}
+
+.alert.info {
+  background-color: #3498db;
+}
+
+/* Landing Page Styles */
+.landing-page {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.landing-header {
+  margin-bottom: 40px;
+}
+
+.get-started-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.landing-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.feature {
+  margin: 20px;
+  width: 30%;
+}
+
+.feature-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.benefits {
+  background-color: #e0f7fa;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.benefits h2 {
+  margin-bottom: 20px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: row; /* Align items horizontally */
+  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap; /* Allow wrapping to new lines if needed */
+}
+
+.benefit-item {
+  margin: 20px;
+  width: 30%; /* Adjust width as needed */
+}
+
+.testimonials {
+  background-color: #f1f8e9;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.testimonials h2 {
+  margin-bottom: 20px;
+}
+
+.testimonials-list {
+  display: flex;
+  flex-direction: row; /* Align items horizontally */
+  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap; /* Allow wrapping to new lines if needed */
+}
+
+.testimonial {
+  margin: 20px;
+  width: 30%; /* Adjust width as needed */
+}
+
+.testimonial h4 {
+  font-weight: bold;
+}
+
+/* Call-to-Action Styles */
+.cta {
+  background-color: lavenderblush;
+  color: black;
+  padding: 40px;
+}
+
+.cta h2 {
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: green;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #004494;
+}
+
+.landing-footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: whitesmoke;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px; /* Ensure there's space between header and navbar */
+}
+
+.navbar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 20px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 6px;
+}
+
+.navbar-link:hover {
+  background-color: green;
+  color: #f5f5f5;
+}
+
+/* Header Styles */
+.header {
+  background-color: #0288d1; /* Change to green if preferred */
+  color: white;
+  padding: 20px 30px;
+  box-shadow: 0 4px 8px rgba(46, 25, 25, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky; /* Keeps the header sticky at the top */
+  top: 0;
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure the header is above other elements */
+}
+
+.header h1 {
+  font-size: 2rem; /* Adjust size as needed */
+  margin: 0;
+}
