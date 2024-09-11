@@ -9,6 +9,7 @@ import ClaimsProcessing from './pages/ClaimsProcessing'; // Adjust path as neede
 import Tracking from './pages/Tracking'; // Adjust path as needed
 import Governance from './pages/Governance'; // Adjust path as needed
 import Security from './pages/Security'; // Adjust path as needed
+import Authentication from './pages/Authentication'; // Import Authentication component
 import './pages/style.css'; // Import your global CSS
 
 const App: React.FC = () => {
@@ -23,6 +24,7 @@ const App: React.FC = () => {
           <Route path="/tracking" element={<Tracking />} />
           <Route path="/governance" element={<Governance />} />
           <Route path="/security" element={<Security />} />
+          <Route path="/auth" element={<Authentication />} /> {/* Add Authentication route */}
         </Routes>
       </MainLayout>
     </Router>
